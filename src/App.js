@@ -30,7 +30,7 @@ function App() {
     <div className="container">
       <Search handleSeaechNote={setSearchText} />
       <NotesList 
-        notes={notes} 
+        notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
         handleAddNote={addNote}
         handleDeleteNote={deleteNote} />
     </div>
