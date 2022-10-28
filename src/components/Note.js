@@ -1,12 +1,12 @@
 import { DeleteForeverSVGIcon } from "react-md";
 
-const Note = () => {
+const Note = ({ id, text, date }) => {
   return (
-    <div className="note">
-        <span>Hello</span>
+    <div key={id} className="note">
+        <span>{text}</span>
         <div className="note-footer">
-          <small>12/34</small>
-          <DeleteForeverSVGIcon className="delete-icon" size="0.3em"  />
+          <small>{date}</small>
+          <DeleteForeverSVGIcon className="delete-icon" />
         </div>
     </div>
   )
