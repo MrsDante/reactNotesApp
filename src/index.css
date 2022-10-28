@@ -60,6 +60,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 .note-footer {
@@ -68,3 +69,29 @@ textarea:focus {
   justify-content: space-between;
 }
 
+.delete-icon {
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+}
+
+.search input:focus {
+  outline: none;
+}

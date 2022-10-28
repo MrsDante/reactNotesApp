@@ -1,33 +1,18 @@
 import React, { useState }  from 'react';
-import { nanoid } from 'nanoid';
+import uniqid from 'uniqid';
 import './App.css';
 import NotesList from './components/NotesList';
+import Search from './components/Search';
 
 function App() {
 
-  const [notes, setNotes] = useState([
-    {
-    id: nanoid(),
-    text: 'Hello there',
-    date: '11/11/22',
-    },
-    {
-      id: nanoid(),
-      text: 'Hello there 2',
-      date: '12/11/22',
-      },
-      {
-        id: nanoid(),
-        text: 'Hello there 3',
-        date: '13/11/22',
-        },
-
-]);
+  const [notes, setNotes] = useState([]);
+  const [searchText, setSearchText] = useState('');
 
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
-      id: nanoid(),
+      id: uniqid(),
       text: text,
       date: date.toLocaleDateString(),
     };
@@ -36,9 +21,18 @@ function App() {
     setNotes(newNotes);
   };
 
+  const deleteNote = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  };
+
   return (
     <div className="container">
-      <NotesList notes={notes} handleAddNote={addNote} />
+      <Search handleSeaechNote={setSearchText} />
+      <NotesList 
+        notes={notes} 
+        handleAddNote={addNote}
+        handleDeleteNote={deleteNote} />
     </div>
   );
 }
