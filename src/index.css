@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./img/wallpaperbetter\ \(3\).jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 code {
@@ -19,7 +22,9 @@ code {
 }
 
 .dark-mode {
-  background-color: black;
+  background: url('./img/wallpaperbetter\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .dark-mode h1 {
@@ -42,13 +47,13 @@ code {
 }
 
 .note.new {
-  background-color: darkorchid;
+  background-color: #faa76c;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: darkorchid;
+  background-color: #faa76c;
 }
 
 textarea:focus {
@@ -56,14 +61,14 @@ textarea:focus {
 }
 
 .save {
-  background-color: #e1e1e1;
+  background-color: #fffafa;
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
 
 .save:hover {
-  background-color: #ededed;
+  background-color: #fffafa;
   cursor: pointer;
 }
 
@@ -96,7 +101,7 @@ textarea:focus {
 .search {
   display: flex;
   align-items: center;
-  background-color: rgb(233, 233, 233);
+  background-color: #fffafa;
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 1.5em;
@@ -104,7 +109,7 @@ textarea:focus {
 
 .search input {
   border: none;
-  background-color: rgb(233, 233, 233);
+  background-color: #fffafa;
 }
 
 .search input:focus {

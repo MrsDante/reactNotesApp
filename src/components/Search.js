@@ -11,7 +11,7 @@ const Search = ({ handleSeaechNote }) => {
       <input
         onChange={(e) => handleSeaechNote(e.target.value)}
         type="text"
-        placeholder="Напиши что-нибудь, чтобы найти заметку" />
+        placeholder="Напиши что-нибудь..." />
     </div>
   )
 };
