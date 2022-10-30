@@ -1,3 +1,14 @@
+# Описание
+
+В приложении реализована возможность добавлять и удалять заметки в виде листочков. Возможность менять тему на светлую/темную
+
+# Использованные технологии
+
+React, react hooks
+
+# GitHub Pages
+[Посмотреть!](https://mrsdante.github.io/reactNotesApp/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

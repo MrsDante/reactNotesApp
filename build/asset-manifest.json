@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reactNotesApp/static/css/main.b8231aa0.css",
+    "main.js": "/reactNotesApp/static/js/main.feabf375.js",
+    "static/js/787.28cb0dcd.chunk.js": "/reactNotesApp/static/js/787.28cb0dcd.chunk.js",
+    "static/media/wallpaperbetter (1).jpg": "/reactNotesApp/static/media/wallpaperbetter (1).490e4fe1cdb9c1179882.jpg",
+    "static/media/wallpaperbetter (3).jpg": "/reactNotesApp/static/media/wallpaperbetter (3).af718f4fec026fb07411.jpg",
+    "index.html": "/reactNotesApp/index.html",
+    "main.b8231aa0.css.map": "/reactNotesApp/static/css/main.b8231aa0.css.map",
+    "main.feabf375.js.map": "/reactNotesApp/static/js/main.feabf375.js.map",
+    "787.28cb0dcd.chunk.js.map": "/reactNotesApp/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8231aa0.css",
+    "static/js/main.feabf375.js"
+  ]
+}
