@@ -9,6 +9,7 @@ function App() {
 
   const [notes, setNotes] = useState([]);
   const [searchText, setSearchText] = useState('');
+  const [darkMode, setDarkMode] = useState(false);
 
   const addNote = (text) => {
     const date = new Date();
@@ -28,13 +29,15 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <Header />
-      <Search handleSeaechNote={setSearchText} />
-      <NotesList 
-        notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
-        handleAddNote={addNote}
-        handleDeleteNote={deleteNote} />
+    <div className={`${darkMode && 'dark-mode'}`}>
+      <div className="container">
+        <Header handleToggleDarkMode={setDarkMode} />
+        <Search handleSeaechNote={setSearchText} />
+        <NotesList 
+          notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
+          handleAddNote={addNote}
+          handleDeleteNote={deleteNote} />
+      </div>
     </div>
   );
 }
