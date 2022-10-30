@@ -47,13 +47,21 @@ code {
 }
 
 .note.new {
-  background-color: #faa76c;
+  background-color: #f87d5c;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: #faa76c;
+  background-color: #f87d5c;
+}
+
+.dark-mode .note.new {
+  background-color: #2a292f;
+}
+
+.dark-mode .note.new textarea {
+  background-color: #2a292f;
 }
 
 textarea:focus {
@@ -81,6 +89,10 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+}
+
+.dark-mode .note {
+  background-color: #e7b379;
 }
 
 .note-footer {
