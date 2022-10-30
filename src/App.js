@@ -1,6 +1,7 @@
 import React, { useState }  from 'react';
 import uniqid from 'uniqid';
 import './App.css';
+import Header from './components/Header';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className="container">
+      <Header />
       <Search handleSeaechNote={setSearchText} />
       <NotesList 
         notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
